@@ -9,12 +9,12 @@ This algorithm itself is not particularly efficient due to it's radial approach 
 The code is designed to display the optimal route for the given problem.
 The map is a (5x6) grid with the start location at (0,0) and the goal at (4,5).
 ```
-    0 	1 	2 	3 	4 	5
-0 	0 	1 	0 	0 	0 	0
-1 	0 	1 	0 	0 	0 	0
-2 	0 	1 	0 	0 	0 	0
-3 	0 	1 	0 	0 	0 	0
-4 	0 	0 	0 	1 	1 	0
+    0   1   2   3   4   5
+0   0   1   0   0   0   0
+1   0   1   0   0   0   0
+2   0   1   0   0   0   0
+3   0   1   0   0   0   0
+4   0   0   0   1   1   0
 
 ```
 The program displays both the expansions made by the BF search algorithm in order in addition to the optimal route.
