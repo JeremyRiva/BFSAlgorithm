@@ -1,8 +1,7 @@
 # Path planning with graph search algorithms
 
 ## Outline
-The aim of the project is to program a graph search algorithm to find a route both optimal and complete. In this scenario the breadth-first search is compared to the A* search algorithm.
-In this scenario the breadth-first search algorithm is not as efficient due to it's uninformed radial approach of searching. 
+The __breadth-first search__ is compared to the __A* search__ algorithm. In this scenario the breadth-first search algorithm is not as efficient due to it's uninformed radial approach of searching. 
 On the other hand the A* search is more efficient as it is informed, in other words it is aware of where the goal is located, hence finding the shortest route.
 
 ## Structure overview
@@ -23,9 +22,9 @@ The program displays the expansions made by the BF search algorithm in order. In
 BFS expansions in order:
 0   -1  13  17  -1  -1
 1   -1  10  14  18  -1
-2   -1  8   11  15  19
-3   -1  7   9   12  16
-4   5   6   -1  -1  20
+2   -1   8  11  15  19
+3   -1   7   9  12  16
+4    5   6  -1  -1  20
 ```
 
 ### A* search algorithm
@@ -34,15 +33,15 @@ For this model the Manhattan Heuristic vector was used, which was calcualted as 
 `y = y_goal - y_cellposition`   
 `Manhattan distance d = |x| + |y|`   
 
-In comparison the expansion made by the A* search shows only 11 expansions to reach the goal (the shortest path)
+In comparison the expansion made by the A* search shows only 11 expansions to reach the goal (the shortest path).
 
 ```
 A* search expansions in order:
 0   -1  -1  -1  -1  -1
 1   -1  -1  -1  -1  -1
 2   -1  -1  -1  -1  -1
-3   -1  7   8   9   10
-4   5   6   -1  -1  11
+3   -1   7   8   9  10
+4    5   6  -1  -1  11
 ```
 
 ## Results
