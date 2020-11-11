@@ -30,9 +30,9 @@ BFS expansions in order:
 
 ### A* search algorithm
 For this model the Manhattan Heuristic vector was used, which was calcualted as follows:
-`x_d = x_goal - x_cellposition`
-`y_d = y_goal - y_cellposition`
-`Manhattan distance d = |x_d| + |y_d|`
+`x = x_goal - x_cellposition`   
+`y = y_goal - y_cellposition`   
+`Manhattan distance d = |x| + |y|`   
 
 In comparison the expansion made by the A* search shows only 11 expansions to reach the goal (the shortest path)
 
