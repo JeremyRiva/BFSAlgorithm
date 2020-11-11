@@ -1,6 +1,6 @@
 # Visual studio
 
 .vs
-/Debug
-*.vcxpro*
+*/Debug
+*.vcxproj*
 *.sln
