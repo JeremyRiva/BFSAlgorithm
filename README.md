@@ -16,7 +16,7 @@ The map is a (5x6) grid with the start location at (0,0) and the goal at (4,5). 
 0   0   0   1   1   0
 ```
 
-The program displays the expansions made by the BF search algorithm in order.
+The program displays the expansions made by the BF search algorithm in order. In this example the algorithm took 20 expansions to reach the goal.
 
 ```
 BFS expansions in order:
