@@ -1,11 +1,11 @@
-# Breadth-First search algorithm
+# Path planning with graph search algorithms
 
 ## Outline
-The aim of the project is to program a graph search algorithm to find a route both optimal and complete using the breadth-first search.
-The breadth-first search algorithm itself is not particularly efficient due to it's radial approach to searching. Nonetheless, for small applications it works well.
+The aim of the project is to program a graph search algorithm to find a route both optimal and complete. In this scenario the breadth-first search is compared to the A* search algorithm.
+In this scenario the breadth-first search algorithm is not as efficient due to it's uninformed radial approach of searching. 
+On the other hand the A* search is more efficient as it is informed, in other words it is aware of where the goal is located, hence finding the shortest route.
 
 ## Structure overview
-
 The map is a (5x6) grid with the start location at (0,0) and the goal at (4,5). The obstacles are represented by a '1' in the grid below.
 
 ```
@@ -16,6 +16,7 @@ The map is a (5x6) grid with the start location at (0,0) and the goal at (4,5). 
 0   0   0   1   1   0
 ```
 
+### Breadth-First search algorithm
 The program displays the expansions made by the BF search algorithm in order. In this example the algorithm took 20 expansions to reach the goal. The areas not expanded are represented by '-1'.
 
 ```
@@ -27,7 +28,25 @@ BFS expansions in order:
 4   5   6   -1  -1  20
 ```
 
-And is also designed to display the optimal route for the given problem. The goal in this case is represented by a '*'.
+### A* search algorithm
+For this model the Manhattan Heuristic vector was used, which was calcualted as follows:
+`x_d = x_goal - x_cellposition`
+`y_d = y_goal - y_cellposition`
+`Manhattan distance d = |x_d| + |y_d|`
+
+In comparison the expansion made by the A* search shows only 11 expansions to reach the goal (the shortest path)
+
+```
+A* search expansions in order:
+0   -1  -1  -1  -1  -1
+1   -1  -1  -1  -1  -1
+2   -1  -1  -1  -1  -1
+3   -1  7   8   9   10
+4   5   6   -1  -1  11
+```
+
+## Results
+Both algorithms displayed the optimal route for the given problem. The goal in this case is represented by a '*'.
 
 ```
 Optimal route:
