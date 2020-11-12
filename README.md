@@ -28,7 +28,7 @@ BFS expansions in order:
 ```
 
 ### A* search algorithm
-For this model the Manhattan Heuristic vector was used, which was calcualted as follows:   
+As the movements were restricted to 4 directions(up, left, down, right), the Manhattan Heuristic vector was used and was calcualted as follows:   
 `x = x_goal - x_cellposition`   
 `y = y_goal - y_cellposition`   
 `Manhattan distance d = |x| + |y|`   
